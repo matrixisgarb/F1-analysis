@@ -25,8 +25,9 @@ race = st.sidebar.selectbox('Race', [
 @st.cache_resource
 def load_session(year, race):
     session = fastf1.get_session(year, race, 'R')
-    session.load()
+    session.load(laps=True, telemetry=False, weather=False, messages=False)
     return session
+
 
 with st.spinner('Loading race data...'):
     session = load_session(year, race)
