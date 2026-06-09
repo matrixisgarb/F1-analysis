@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 fastf1
 matplotlib
 streamlit
+=======
+fastf1
+matplotlib
+streamlit
+>>>>>>> 50722b2d0f0cd328c14f85ad291ac9bf37a270a0
 pandas
